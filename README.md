@@ -1,0 +1,1 @@
+fichier pour expiquer le projet ENI-MEMORY

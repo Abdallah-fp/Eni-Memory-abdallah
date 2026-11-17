@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+   <h1>ENI-<strong>MEMORY</strong>-Accueil</h1>
+        <div class="navbar">
+                <a href="accueil.html">Accueil</a></li>
+                <a href="inscrire.html">S'inscrire</a>
+                <a href="seconnecter.html">Se connecter</a>
+                <a href="Profil.html">Profil</a>
+                <a href="Jouer.html">Jouer</a>
+        </div>
+
+        <section class="inscrire" >
+            <!-- <h4><Inscrivez-vous class="Inscrivez-vous">Inscrivez-vous</Inscrivez-vous></h4> -->
+                    <fieldset>
+                                        <h2><Inscrivez-vous class="Inscrivez-vous">Inscrivez-vous.</Inscrivez-vous></h2>
+
+                        <form>
+                                <div>
+                                    <label for="nom">Nom d'utilisateur</label> <br>
+                                    <input type="text" name="nom" id="nom" placeholder="3 caractères minimum" required autofocus title="Renseigner votre nom" pattern="[a-zA-Z]+">
+                                </div>
+                                <div>
+                                    <label for="email">Entrez votre email</label><br>
+                                    <input type="email" name="email" id="email" placeholder="votre email" required autofocus title="Renseigner votre email">
+                                </div>
+                                <div>
+                                    <label for="mdp">Mot de passe</label><br>
+                                    <input type="password" name="mdp" id="mdp" required placeholder="Votre mot de passe" title="Renseigner un mot de passe (min. 8 caractères dont au moins 1 minuscule , 1 majuscule et un chiffre)" 
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                </div>
+                                <div>
+                                    <label for="Confirmez">Confirmez votre mot de passe</label><br>
+                                    <input type="password" name="Confirmez" id="Confirmez" required placeholder="confirmez votre mot de passe" title="Renseigner un mot de passe (min. 8 caractères dont au moins 1 minuscule , 1 majuscule et un chiffre)" 
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                </div>
+                                <div>
+                                    <input class="btn" type="submit" value="création du compte">
+                                    <input  class="btn" type="reset" value="Annuler">
+                                </div>
+                        </form>
+                    </fieldset>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+</body>
+</html>

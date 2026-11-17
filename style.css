@@ -1,9 +1,17 @@
+/* les H */
 h1{
     color: white;
     text-align: center;
     font-size: 4vw;
     
 }
+h2{
+    text-align: center;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+
 
 body{
     background-color: #1b8fbe;
@@ -25,29 +33,78 @@ body{
   padding: 3% 5%;
   text-decoration: none;
   font-size: 17px;
-}
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-} 
+}
+.navbar a:hover{
+  background-color: black;
+  color: white;
+}
 
 
 /* modification de l'article d'accueil */
 article{
     padding: 30%;
-    padding-top: 5%;
+    padding-top: 1%;
     color: white;
-
-
 }
 
 /* modification dans l'article (div) */
 .div_article{
      background-color: black;
-    border-radius: 20px;
+    border-radius: 10%;
     padding-inline: 9%;
     padding-block: 3%;
 }
+
+
+.inscrire{
+  /* padding: 30%; */
+  /* padding-top: 5%; */
+  color:white;
+  /* border-radius: 15px; */
+  /* background-color: black; */
+  /* padding-block: 3%; */
+  display: flex;
+  padding: 2%;
+  justify-content: space-evenly;
+
+}
+
+fieldset {
+    /* border-radius: 7px; */
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 25px;
+  
+  
+  }
+
+
+input {
+    height: 30px;
+    /* width: 100%; */
+    width: 250px;
+    padding-left: 7px;
+    margin-top: 8px;  
+    /* border-radius: 20px; */
+  }
+
+label {
+    color: white;
+    text-align: right;
+  
+  
+  
+  }
+
+section div {
+    margin: 20px;
+}
+
+.btn {
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-inline: 10px;  
+  }
 
 

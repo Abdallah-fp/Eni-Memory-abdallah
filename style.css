@@ -11,8 +11,6 @@ h1{
     padding-top: 5%;
 }
 
-
-
 body{
     background-color: #1b8fbe;
 }
@@ -25,7 +23,6 @@ body{
   width: 30%;
     
 }
-
 .navbar a {
   float: left;
   color: #f2f2f2;
@@ -33,7 +30,6 @@ body{
   padding: 3% 5%;
   text-decoration: none;
   font-size: 17px;
-
 }
 .navbar a:hover{
   background-color: black;
@@ -51,8 +47,8 @@ article{
 /* modification dans l'article (div) */
 .div_article{
      background-color: black;
-    border-radius: 10%;
-    padding-inline: 9%;
+    border-radius: 4%;
+    padding-inline: 7%;
     padding-block: 3%;
 }
 
@@ -108,4 +104,32 @@ section div {
     color: white;
 }
 
-/*  */
+/* profil */
+.profil_h2{
+  color: white;
+  text-align: center;
+}
+.field_profil{
+  background-color: black;
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 1%;
+  /* margin: 33%; */
+  margin-top: 2%;
+  margin-inline: 30%;
+  margin-inline-start: 35%;
+  margin-inline-end: 35%;
+}
+.img_profil{
+  display: block;
+  margin: auto;
+}
+.img_profil2{
+  display: block;
+  margin: auto;
+  border-color: white;
+}
+.submit_profil{
+  display: block;
+  margin: auto;
+}

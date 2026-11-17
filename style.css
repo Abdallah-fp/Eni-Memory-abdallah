@@ -5,7 +5,7 @@ h1{
     font-size: 4vw;
     
 }
-h2{
+.inscription_h2{
     text-align: center;
     padding: 10%;
     padding-top: 5%;
@@ -57,54 +57,55 @@ article{
 }
 
 
+/* page d'inscription */
 .inscrire{
-  /* padding: 30%; */
-  /* padding-top: 5%; */
   color:white;
-  /* border-radius: 15px; */
-  /* background-color: black; */
-  /* padding-block: 3%; */
   display: flex;
   padding: 2%;
   justify-content: space-evenly;
-
 }
-
 fieldset {
-    /* border-radius: 7px; */
     background-color: black;
     margin-top: 20px;
     border-radius: 25px;
-  
-  
   }
-
-
 input {
     height: 30px;
-    /* width: 100%; */
     width: 250px;
     padding-left: 7px;
     margin-top: 8px;  
-    /* border-radius: 20px; */
   }
 
 label {
     color: white;
     text-align: right;
-  
-  
-  
   }
-
+/* page d'inscription */
 section div {
     margin: 20px;
 }
-
 .btn {
     border-radius: 10px;
     margin-top: 60px;
     margin-inline: 10px;  
   }
 
+/* création la page de connection */
+.connecter{
+  justify-content: space-evenly;
+  display: flex;
+  padding: 2%;
+}
+.field_connecter{
+  background-color: black;
+  margin-top: 20px;
+  border-radius: 20px;
+} 
+.connection_h2{
+    text-align: center;
+    padding: 10%;
+    padding-top: 5%;
+    color: white;
+}
 
+/*  */

@@ -6,6 +6,7 @@
     <title>Jouer</title>
     <script src="jouer.js"></script>
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <body>
@@ -21,15 +22,50 @@
         <br>
         <section>
             <fieldset>
-                 <button onclick="changeImage1()"><img src="question.svg" width="150" id="img1"></button>
-                 <button onclick="changeImage2()"><img src="question.svg" width="150" id="img2"></button>
-                 <button onclick="changeImage3()"><img src="question.svg" width="150" id="img3"></button>
-                 <button onclick="changeImage4()"><img src="question.svg" width="150" id="img4"></button>
-                 <button onclick="changeImage5()"><img src="question.svg" width="150" id="img5"></button>              
-                 <button onclick="changeImage6()"><img src="question.svg" width="150" id="img6"></button>
-                
+                 <button onclick="changeImage1()"><img src="img/question.svg" width="150" id="img1"></button>
+                 <button onclick="changeImage2()"><img src="img/question.svg" width="150" id="img2"></button>
+                 <button onclick="changeImage3()"><img src="img/question.svg" width="150" id="img3"></button>
+                 <button onclick="changeImage4()"><img src="img/question.svg" width="150" id="img4"></button>
+                 <button onclick="changeImage5()"><img src="img/question.svg" width="150" id="img5"></button>              
+                 <button onclick="changeImage6()"><img src="img/question.svg" width="150" id="img6"></button>
             </fieldset>
         </section>
+
+        <button onclick="myfunction()">jouer</button>
+         <p id="demo1"></p>      
+
+         <div id="plateau"></div>  
+
+
+        <script>
+            const legums = [1,2,3,4,5,6];
+const arr2 = [1,2,3,4,5,6];
+const tab = legums.concat(arr2);
+document.getElementById("demo1").innerHTML = tab;
+// c'est une function pour mélanger les deux tableaux onclick
+function myfunction(){
+    for (let i = tab.length -1; i > 0;i--){
+        let j = Math.floor(Math.random()*(i+1));
+        let k = tab[i];
+        tab[i]=tab[j];
+        tab[j]=k;
+    }
+    document.getElementById("demo1").innerHTML = tab;
+}
+
+    const plat = document.getElementById("plateau");
+// j'ai créé une fonction pour faire apparaitre les 12 cartes
+    tab.forEach(function(nombre){
+    const carr = document.createElement("div");
+    carr.classList.add("card");
+    carr.textContent = nombre;
+    plateau.appendChild(carr);
+    });
+
+   
+
+
+        </script>
     </main>
 </body>
 </html>

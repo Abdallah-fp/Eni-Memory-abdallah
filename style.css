@@ -1,21 +1,26 @@
-/* les H */
+/* ===== STYLES GÉNÉRAUX DU SITE ===== */
+
+/* Titre principal : blanc, centré, taille qui s'adapte à la largeur de l'écran (vw) */
 h1{
     color: white;
     text-align: center;
     font-size: 4vw;
     
 }
+/* Titre de la page d'inscription */
 .inscription_h2{
     text-align: center;
     padding: 10%;
     padding-top: 5%;
 }
 
+/* Fond bleu pour toutes les pages */
 body{
     background-color: #1b8fbe;
 }
 
-/* navbar d'accueil */
+/* ===== NAVBAR D'ACCUEIL ===== */
+/* Barre fixe : elle reste à l'écran même quand on défile */
  .navbar {
   background-color: #333;
   position: fixed;
@@ -23,6 +28,7 @@ body{
   width: 30%;
     
 }
+/* Liens de la barre : placés côte à côte (float: left) */
 .navbar a {
   float: left;
   color: #f2f2f2;
@@ -31,20 +37,20 @@ body{
   text-decoration: none;
   font-size: 17px;
 }
+/* Changement de couleur au survol de la souris */
 .navbar a:hover{
   background-color: black;
   color: white;
 }
 
-
-/* modification de l'article d'accueil */
+/* ===== ARTICLE D'ACCUEIL ===== */
 article{
     padding: 30%;
     padding-top: 1%;
     color: white;
 }
 
-/* modification dans l'article (div) */
+/* Boîte noire à coins arrondis dans l'article */
 .div_article{
      background-color: black;
     border-radius: 4%;
@@ -52,19 +58,20 @@ article{
     padding-block: 3%;
 }
 
-
-/* page d'inscription */
+/* ===== PAGE D'INSCRIPTION ===== */
 .inscrire{
   color:white;
   display: flex;
   padding: 2%;
   justify-content: space-evenly;
 }
+/* Cadre du formulaire : fond noir et coins arrondis */
 fieldset {
     background-color: black;
     margin-top: 20px;
     border-radius: 25px;
   }
+/* Champs de saisie (concerne TOUS les input du site) */
 input {
     height: 30px;
     width: 250px;
@@ -72,21 +79,24 @@ input {
     margin-top: 8px;  
   }
 
+/* Texte des labels en blanc */
 label {
     color: white;
     text-align: right;
   }
 /* page d'inscription */
+/* Marge autour de chaque div dans une section */
 section div {
     margin: 20px;
 }
+/* Boutons du formulaire */
 .btn {
     border-radius: 10px;
     margin-top: 60px;
     margin-inline: 10px;  
   }
 
-/* création la page de connection */
+/* ===== PAGE DE CONNEXION ===== */
 .connecter{
   justify-content: space-evenly;
   display: flex;
@@ -104,7 +114,7 @@ section div {
     color: white;
 }
 
-/* profil */
+/* ===== PROFIL ===== */
 .profil_h2{
   color: white;
   text-align: center;
@@ -120,6 +130,7 @@ section div {
   margin-inline-start: 35%;
   margin-inline-end: 35%;
 }
+/* margin: auto + display: block = image centrée */
 .img_profil{
   display: block;
   margin: auto;
@@ -135,13 +146,19 @@ section div {
 }
 
 
+/* ===== JEU DE MEMORY ===== */
 
+/* Le plateau : les cartes se placent en rangées (flex-wrap), avec un espace de 10px.
+   max-width + margin: auto = le plateau est centré horizontalement. */
 #plateau_animaux{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   max-width: 380px;
+  margin: auto;
 }
+/* Une carte : c'est elle qui pivote (preserve-3d permet la 3D pour ses faces).
+   transition = le pivotement dure 0,6 seconde. */
 .card{
   width: 80px;
   height: 100px;
@@ -149,16 +166,21 @@ section div {
   transform-style: preserve-3d;
   transition: transform 0.6s;
   cursor: pointer;
+  justify-content: center;
 }
+/* Carte retournée (classe ajoutée par le JS au clic) : rotation de 180° */
 .card.retournee{
   transform: rotateY(180deg);
 }
+/* L'image sur la face avant : 80% de la face, proportions conservées */
 .avant img {
   width: 80%;
   height: 80%;
   object-fit: contain;
 }
 
+/* Réglages communs aux deux faces : superposées au même endroit (absolute),
+   et invisibles quand on les voit de dos (backface-visibility). */
 .face{
   position: absolute;
   width: 100%;
@@ -172,12 +194,21 @@ section div {
   justify-content: center;
   font-size: 32px;
 }
+/* Le dos de la carte : une image (question.svg) qui remplit toute la face */
 .dos{
-  background-color: #3b82f6;
+  background-image: url("img/memory-legume/question.svg");
+  background-size: cover;
+  background-position: center;
 }
+/* La face avant : fond blanc, déjà tournée de 180° (donc cachée au départ) */
 .avant{
   background-color: white;
   transform: rotateY(180deg);
+}
+
+/* Le bloc qui contient tout le jeu : texte centré (compteur, message, bouton) */
+#jeu{
+  text-align: center;
 }
 
  

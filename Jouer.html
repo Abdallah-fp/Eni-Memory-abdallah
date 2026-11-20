@@ -19,103 +19,12 @@
                 <a href="Profil.html">Profil</a>
                 <a href="Jouer.html">Jouer</a>
         </div>
-        <!-- <br>
-        <section>
-            <fieldset>
-                 <button onclick="changeImage1()"><img src="img/question.svg" width="150" id="img1"></button>
-                 <button onclick="changeImage2()"><img src="img/question.svg" width="150" id="img2"></button>
-                 <button onclick="changeImage3()"><img src="img/question.svg" width="150" id="img3"></button>
-                 <button onclick="changeImage4()"><img src="img/question.svg" width="150" id="img4"></button>
-                 <button onclick="changeImage5()"><img src="img/question.svg" width="150" id="img5"></button>              
-                 <button onclick="changeImage6()"><img src="img/question.svg" width="150" id="img6"></button>
-            </fieldset>
-        </section> -->
-
-        <!-- <button onclick="myfunction()">jouer</button> -->
 <br>
-            <!-- <p id="demo1"></p>    -->
-            <div id="plateau_animaux"></div>
-         <button onclick="melangerEtAfficher()">mélanger</button>
-
-          <!-- <script>
-
-            const legums = ["img/1.svg","img/2.svg","img/3.svg","img/4.svg","img/5.svg","img/6.svg"];
-const tab = legums.concat(legums);
-
-    const plateau = document.getElementById("plateau_animaux");
-    let premiere = null;
-    let deuxieme = null;
-    let verr = false;
-
-    function afficherCartes(){
-        plateau.innerHTML = "";
-
-    tab.forEach(function(nombre){
-    const carr = document.createElement("div");
-    carr.classList.add("card");
-    carr.dataset.valeur = nombre;
-
-const dos = document.createElement("div");
-    dos.classList.add("face","dos");  
-
- const avant = document.createElement("div");
-    avant.classList.add("face","avant");
-    const img = document.createElement("img");
-    img.src = nombre;
-    avant.appendChild(img);
-
-    carr.appendChild(dos);
-    carr.appendChild(avant);
-    carr.addEventListener("click",function(){
-        if(verr || carr.classList.contains("retournee")){
-            return;
-        }
-        carr.classList.add("retournee");
-        if(premiere === null) {
-            premiere = carr;
-            return;
-        }
-        deuxieme = carr;
-        if(premiere.dataset.valeur === deuxieme.dataset.valeur){
-            premiere = null;
-            deuxieme = null;
-        }else {
-            verr = true;
-            setTimeout(function(){
-                premiere.classList.remove("retournee");
-                deuxieme.classList.remove("retournee");
-                premiere = null;
-                deuxieme = null;
-                verr = false;
-            },1000);
-        }
-    })
-        plateau.appendChild(carr);
-
-    });
-}
-
-function melanger(){
-    for (let i = tab.length -1; i > 0;i--){
-        let j = Math.floor(Math.random()*(i+1));
-        let k = tab[i];
-        tab[i]=tab[j];
-        tab[j]=k;
-    }
-}
-function melangerEtAfficher(){
-    premiere = null;
-    deuxieme = null;
-    verr = false;
-    melanger();
-    afficherCartes();
-    
-}
-afficherCartes(); 
-
- </script> -->
-
-
+           <div id="jeu">
+             <div id="plateau_animaux"></div>
+            <p>coups : <span id="coups">0</span></p>
+            <P id="message"></P>
+           </div>
     </main>
 </body>
 </html>
